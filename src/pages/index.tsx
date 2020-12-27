@@ -1,21 +1,5 @@
 import React from 'react'
 
-// const Home: React.FC = ({ user }) => {
-//     return (
-//         <div>
-//             <img src={user.avatar_url} />
-//             {/* <Head>
-//                 <title>Create Next App</title>
-//                 <link rel="icon" href="/favicon.ico" />
-//             </Head>
-
-//             <main>
-//                 <h1>Hello</h1>
-//             </main> */}
-//         </div>
-//     )
-// }
-
 export default function Home({ user }): JSX.Element {
     return (
         <div>
@@ -27,6 +11,7 @@ export default function Home({ user }): JSX.Element {
                 style={{ borderRadius: '50%' }}
             />
             <h1>{user.name}</h1>
+            <h1>{user.bio}</h1>
         </div>
     )
 }
@@ -38,8 +23,7 @@ export const getStaticProps = async () => {
     return {
         props: {
             user: data
-        }
+        },
+        revalidate: 10
     }
 }
-
-// export default Home
