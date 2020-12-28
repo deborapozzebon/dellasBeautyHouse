@@ -1,21 +1,17 @@
 import React from 'react'
+import Image from 'next/image'
+import MainContent from '../../components/mainContent'
 
 export default function Home(): JSX.Element {
     return (
         <>
             <div className='split left'>
                 <div className='centered'>
-                    <h1>
-                        LOGO
-                    </h1>
+                    <Image src='/logo.jpeg' alt='logo' width={600} height={500}/>
                 </div>
             </div>
             <div className='split right'>
-                <div className='centered'>
-                    <h1>
-                        CONTENT
-                    </h1>
-                </div>
+                <MainContent />
             </div>
         </>
     )

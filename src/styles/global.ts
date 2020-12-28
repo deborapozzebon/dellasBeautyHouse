@@ -34,6 +34,38 @@ export default createGlobalStyle`
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        text-align: center;
-      }
+        text-align: justify;
+        width: 80%;
+    }
+
+    .manuContent {
+        height: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .menuButton {
+        font: 400 15px Roboto, sans-serif;
+        border-style: none;
+        color: ${props => props.theme.colors.text};
+        background: ${props => props.theme.colors.backgroundRight};
+        transition: 0.3s;
+    }
+
+    .menuButton:hover {
+        border-style: none;
+        background: ${props => props.theme.colors.primary};
+        color: ${props => props.theme.colors.colorWhite};
+        font: 700 15px Roboto, sans-serif;
+    }
+
+    .menuButton:active {
+        font: 700 15px Roboto, sans-serif;
+        border-style: none;
+    }
+
+    .menuButton:focus {
+        font: 700 15px Roboto, sans-serif;
+        border-style: none;
+    }
 `
