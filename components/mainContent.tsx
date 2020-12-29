@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import About from './about'
+import Services from './services'
+import Team from './team'
 
 enum Content {
     about = 0,
@@ -40,10 +42,10 @@ function renderContent(content: Content) {
             return <About />
         break
         case Content.team:
-            return <h1>Time</h1>
+            return <Team />
         break
         case Content.services:
-            return <h1>Serviços</h1>
+            return <Services />
         break
         case Content.contact:
             return <h1>Contato</h1>

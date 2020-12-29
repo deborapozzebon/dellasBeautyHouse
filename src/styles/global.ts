@@ -68,4 +68,16 @@ export default createGlobalStyle`
         font: 700 15px Roboto, sans-serif;
         border-style: none;
     }
+
+    .containerTeam {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 110px auto;
+    }
+
+    .teamImage > img {
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+    }
 `
