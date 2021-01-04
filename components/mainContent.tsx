@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import About from './about'
+import Contact from './contact'
 import Services from './services'
 import Team from './team'
 
@@ -48,7 +49,7 @@ function renderContent(content: Content) {
             return <Services />
         break
         case Content.contact:
-            return <h1>Contato</h1>
+            return <Contact />
         break
     }
 }

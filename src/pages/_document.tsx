@@ -49,6 +49,11 @@ export default class MyDocument extends Document {
                         rel="stylesheet"
                     />
 
+                    <link 
+                        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+                        rel="stylesheet" 
+                    />
+
                     {/* <link rel="icon" href="link aqui" /> */}
                 </Head>
                 <body>

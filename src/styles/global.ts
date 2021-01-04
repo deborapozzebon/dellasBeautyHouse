@@ -80,4 +80,24 @@ export default createGlobalStyle`
         height: 100px;
         width: 100px;
     }
+
+    .btn-primary.custom-btn {
+        border-color: ${props => props.theme.colors.primary};
+        background: ${props => props.theme.colors.primary};
+    }
+
+    .btn-primary.custom-btn:active {
+        background: ${props => props.theme.colors.primaryActiveHover};
+        border-color: ${props => props.theme.colors.primaryActiveHover};
+    }
+
+    .btn-primary.custom-btn:hover {
+        background: ${props => props.theme.colors.primaryActiveHover};
+        border-color: ${props => props.theme.colors.primaryActiveHover};
+    }
+
+    .btn-primary.custom-btn:focus {
+        background: ${props => props.theme.colors.primaryActiveHover};
+        border-color: ${props => props.theme.colors.primaryActiveHover};
+    }
 `
